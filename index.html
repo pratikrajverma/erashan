@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eRashan</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDXH8cxdzSyMNuTH6K9Nkf4TwoMrct2pMk">
+        
+    </script>
+    </head>
+<body>
+    <div class="container">
+        <div class="frontpage">
+            <nav class="navbar">
+                <div class="logo"><img src="./logo.png"></div>
+                <div class="b1"></div>
+                <div class="b2"><a href>HOME</a></div>
+                <div class="b2"><a href>SELLER</a> </div>
+                <div class="b2"><a href>USER</a> </div>
+                <div class="b2"><a href> ADDS</a></div>
+            </nav>
+    
+    
+            <div class="header">
+                <div  id="ib3">eRashan</div>
+                <div class="b3">
+                    <div class="b31"><a href="login.html" target="_blank">login</a></div>
+                    <div class="b32"><a href="signup.html" target="_blank">sign up</a> </div>
+                </div>
+            </div>
+
+            <div class="front-body">
+                <div class="loop-text">
+                    Are you <span class="role"></span>
+                </div>
+
+                <div class="fbb1">
+                    Order your rashan from your favourite Kirana shop near you
+                </div>
+
+                <div class="location">
+                    <input  type="text"  id="search-bar">
+                    <div class="btn-locateme">
+                        Locate Me
+                    </div>
+                    <div class="search">search</div>
+                </div>
+
+                <div class="fbb2">
+                    Upcoming city in india
+                </div>
+
+                <div class="fbb3">
+                    Ahmedabad  Bangalore  Chennai  Delhi  Gurgaon  Hyderabad  Kolkata  Mumbai  Pune  &  more.
+                </div>
+
+            </div>
+        </div>
+        
+
+
+        
+        <div class="imagebox">
+            <div class="image1">
+                <div class="para1" id="paraimg1">
+                        <div class="middle-img1">
+                            <img src="./image middle/img1-removebg-preview.png">
+                            <button>
+                                Make List
+                            </button>
+                        </div>
+                        
+                        <div class="middle-img2">
+                            <img src="./image middle/img2-removebg-preview.png">
+                            <button>
+                                Packing
+                            </button>
+                        </div>
+                        
+                        <div class="middle-img3">
+                            <img src="./image middle/img3-removebg-preview (1).png">
+                            <button>
+                                Deliver
+                            </button>
+                        </div>
+                </div>
+                
+            </div>
+                
+                
+            </div>
+
+            <div class="image2">
+
+                <div class="para1">
+                   <ul>
+                    <li>Monthly rashan</li>
+                    <li>Avoid one by one search of item</li>
+                    <li>Only list will given to kirana dukan</li>
+                    <li>Most trustable kirana shop use not provide by website</li>
+                    <li>not random shop like blinkit, jio mart etc</li>
+                    
+                   </ul>
+                </div>
+            </div>
+            
+            <div class="image3">
+                <div class="para1">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid animi consequatur veniam a ipsum quasi aperiam modi repudiandae odit magnam, facere sapiente quibusdam porro ab ipsam obcaecati excepturi, nihil et. <br><br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo commodi neque voluptatibus, explicabo nostrum impedit temporibus dicta necessitatibus optio quis perferendis earum. Facere tempora voluptate reiciendis, nesciunt et ipsa velit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat quas numquam beatae, quaerat veniam veritatis ut in fuga aperiam error recusandae iusto blanditiis odit aliquam assumenda fugit fugiat dolores provident!
+                </div>
+            </div>
+        </div>
+           
+
+
+    <div class="footer">
+        <div class="leftbox">
+            <img src="./logo2.png">
+            <h3 style="color: white; font-size: 30px; user-select: none;">eRashan</h3>
+        </div>
+
+
+        <div class="centerbox">
+            <p style="color: white; font-size: 25px; user-select: none;" >ⓒ 2023 eRashan</p>
+        </div>
+
+        <div class="rightbox">
+            <a href="https://www.instagram.com/aryacollege/"><img src="./image/insta.png"></a>
+            <a href="https://in.pinterest.com/"><img src="./image/pintrest.png"></a>
+            <a href="https://www.facebook.com/aryacollegein/"><img src="image/Screenshot (466).png"></a>
+            <a href="https://twitter.com/aryacollegemain?lang=en"><img src="./image/twiter.png"></a>
+        </div>
+        <img src="./qr-code (2).png" class="qr">
+    </div>
+    
+    <h3>made by: Pratik Raj Verma</h3>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+    <script>
+        var typeData = new Typed(".role", {
+          strings: [
+            "Busy ?",
+            "Hungry ?",
+            "In emergency ?",
+            "out of station ?",
+            "at late night in working ?",
+          ],
+          loop: true,
+          typeSpeed: 100,
+          backSpeed: 80,
+          backDelay: 1000,
+        });
+      </script>
+
+     <script type="text/javascript">
+        $(document).ready(function(){
+            var autocomplete;
+            var id='search-bar';
+            autocomplete= new google.maps.places.Autocomplete((document.getElementById(id)),{
+                types:['geocode'],
+            })
+        });
+      </script>
+
+    </div>
+</body>
+</html>
